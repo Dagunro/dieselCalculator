@@ -10,29 +10,28 @@
     <h2>Diesel calculator</h2>
     <div class="calculator">
         <form action="#">
-            <p>Generator capacity</p>
-            <input type="radio" id="13" name="13KVA" value="13KVA" >
+            <p id="gen-cap">Generator capacity</p>
+            <input type="radio" id="13" name="DG" value="13KVA" >
             <label for="13KVA">13KVA -15KVA</label><br>
-            <input type="radio" id="20" name="20KVA" value="20KVA" >
+            <input type="radio" id="20" name="DG" value="20KVA" >
             <label for="20KVA">20KVA</label><br>
-            <input type="radio" id="30" name="30KVA" value="30KVA" >
+            <input type="radio" id="30" name="DG" value="30KVA" >
             <label for="30KVA">30KVA</label><br>
-            <input type="radio" id="45" name="45KVA" value="45KVA" >
+            <input type="radio" id="45" name="DG" value="45KVA" >
             <label for="45KVA">45KVA</label><br>
-            <input type="radio" id="60" name="60KVA" value="60KVA" >
+            <input type="radio" id="60" name="DG" value="60KVA" >
             <label for="60KVA">60KVA</label><br>
-            <input type="radio" id="80" name="80KVA" value="80KVA" >
-            <label for="80KVA">80KVA</label>
-        </form>
-        <form action="#">
+            <input type="radio" id="80" name="DG" value="80KVA" >
+            <label for="80KVA">80KVA</label><br>
             <label for="Total-runtime">Total Runtime</label><br>
             <input type="text" id="runtime" placeholder="total runtime"><br>
             <label for="cph">CPH</label><br>
             <input type="text" id="cph" placeholder="Enter cph"><br>
-            <input type="submit">
+            <input type="submit" id="submit">
         </form>
-        <div class="answer">
-
+        <div class="result-container">
+            <p>Your result is displayed here</p>
+            <div class="result"></div>
         </div>
     </div>
 </body>
